@@ -11,23 +11,71 @@
     --pink: #ff216e;
     --white: #e8e8e8;
     --yellow: #ffdb02;
-    --orange: #ff5401;}
+    --orange: #ff5401;
+}
 
 body{
     font-family: 'Montserrat', sans-serif; 
     /* grab from google fonts. add link under stylecss connection in index */}
 
 header{
-    background-color:var(--purple);}
+    position: sticky; 
+    top: 0;
+    width: 150%;
+
+    background-color: var(--purple);
+    height: 30px;
+    color: var(--white);
+}
+
+ul { 
+    list-style-type: none;}
+
+li {
+    float: left;
+    padding-left: 3%;
+    padding-top: 0.5%;
+}
+
+.menu-link{
+    font-size: 0.62rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.login-btn{
+    color: var(--orange);
+    float: right;
+}
 
 main{
-    background-color:var(--pink);}
+    background-color:var(--pink);
+}
 
 section{
-    border: 5px var(--white) solid;
+    height: 300px;
+    text-align: center;
     /* border-style: solid;
     border-color: #e8e8e8;
     border-width: 5px; */}
 
+.about-section{
+    background-color: white;
+}
+
+.hero-section{
+    height: 550px;
+    background: url(/img/bocacodeclass.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: var(--purple);
+    background-blend-mode: screen;
+}
+
+
+
 footer{
-    background-color:var(--orange);}
+    background-color:var(--orange);
+}
