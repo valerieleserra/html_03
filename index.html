@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Boca Code html Day 2</title>
+</head>
+<body>
+  <header>
+      <nav>
+          <ul>
+              <li class="menu-link">Home</li>
+              <li class="menu-link">About</li>
+              <li class="menu-link">Contact</li>
+          </ul>
+      </nav>
+  </header>
+
+
+<main>
+   <section> 
+       <h1 id="hero">  Hero </h1> 
+    </section>
+
+   <section id="main">
+      <h2>About</h2>
+       <article>Article 1</article>
+       <article>Article 2</article>
+   </section>
+
+   <section id="contact">
+       <h2>Contact</h2>
+       <form onsubmit="handleSubmit(event)">
+        <label for="name">
+        Name:
+        <input type = "text" onchange="handleNameChange()" name="name"/>
+        </label>
+        <br />
+        Email:
+        <input type = "email" name = "email">
+        </label>
+        <br />
+        <label for = "message" >
+        Message:
+        <textarea name="message" id="" cols="30" rows="4" ></textarea>
+        </label>
+        <br>
+        <input type="submit" value="SEND">
+
+    </form>
+    </section>
+</main>
+    
+<footer><ul>
+    <li>Home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul></footer>
+
+<script src="scripts.js"></script> 
+<!-- needs to go within the body -->
+</body>
+</html>

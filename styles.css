@@ -1,0 +1,33 @@
+*,                      
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* Above is normalizing code. By default browser gives you padding */
+}
+:root{
+    --purple: #272262;
+    --pink: #ff216e;
+    --white: #e8e8e8;
+    --yellow: #ffdb02;
+    --orange: #ff5401;}
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+    /* grab from google fonts. add link under stylecss connection in index */}
+
+header{
+    background-color:var(--purple);}
+
+main{
+    background-color:var(--pink);}
+
+section{
+    border: 5px var(--white) solid;
+    /* border-style: solid;
+    border-color: #e8e8e8;
+    border-width: 5px; */}
+
+footer{
+    background-color:var(--orange);}
