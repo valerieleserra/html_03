@@ -16,12 +16,13 @@
 
 body{
     font-family: 'Montserrat', sans-serif; 
-    /* grab from google fonts. add link under stylecss connection in index */}
+    /* grab from google fonts. add link under stylecss connection in index */
+}
 
 header{
     position: sticky; 
     top: 0;
-    width: 150%;
+    width: 100%;
 
     background-color: var(--purple);
     height: 30px;
@@ -29,16 +30,18 @@ header{
 }
 
 ul { 
-    list-style-type: none;}
+    list-style-type: none;
+}
 
 li {
     float: left;
     padding-left: 3%;
     padding-top: 0.5%;
+    margin-right: 1.5%;
 }
 
 .menu-link{
-    font-size: 0.62rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -46,8 +49,6 @@ li {
 .login-btn{
     color: var(--orange);
     float: right;
-    margin-right: 3%;
-
 }
 
 main{
@@ -55,30 +56,17 @@ main{
 }
 
 section{
-    height: 300px;
+    height: 500px;
     text-align: center;
     /* border-style: solid;
     border-color: #e8e8e8;
     border-width: 5px; */}
-
-.about-section{
-    background-color: white;
-    padding: 5%;
-    height: 100%;
-}
-
-.about-section-group{
-    display: flex;
-
-
-}
 
 .hero-section{
 
     display: flex; /*this makes the container flex*/
     justify-content: center; /*aligns to the main axis horizontal*/
     align-items: center; /*aligns to the cross axis vertical*/
-    height: 550px;
 
 
     background: url(/img/bocacodeclass.jpeg);
@@ -90,6 +78,22 @@ section{
     background-blend-mode: screen;
 }
 
+.about-section{
+    background-color: white;
+    padding: 5%;
+    height: 100%;
+}
+
+.about-section-group{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+article{
+    max-width: 600px;
+    margin-top: 70px;
+}
 
 
 footer{

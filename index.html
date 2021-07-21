@@ -31,55 +31,45 @@
    <!-- <section id="main"> -->
     <section class="about-section">
       <h2>About</h2>
-      <div class="about-section-group">
-       <article>
-          <h3> Article 1 </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ipsum, inventore laborum repudiandae impedit cupiditate, nostrum fugiat ea eum incidunt iure obcaecati sapiente, a doloribus? Aspernatur dolore obcaecati voluptas ratione.</p>
-        </article>
-
-       <article>
-          <h3> Article 2 </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum alias sit libero fugiat atque eum quod quae repudiandae ea. Asperiores neque sequi fugit modi maiores placeat soluta. Quas, qui!</p>
-        </article>
-       <article>
-          <h3> Article 2 </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum alias sit libero fugiat atque eum quod quae repudiandae ea. Asperiores neque sequi fugit modi maiores placeat soluta. Quas, qui!</p>
-        </article>
-       <article>
-          <h3> Article 2 </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet harum alias sit libero fugiat atque eum quod quae repudiandae ea. Asperiores neque sequi fugit modi maiores placeat soluta. Quas, qui!</p>
-        </article>
+      <div id="customers"class="about-section-group">
+         <h3>Loading...</h3>
     </div>
    </section>
 
    <section id="contact">
-       <h2>Contact</h2>
+      <h2>Contact</h2>
        <form onsubmit="handleSubmit(event)">
-        <label for="name">
-         Name:
-        <input type = "text" onchange="handleNameChange()" name="name"/>
+        <label for="firstName">
+            First Name:
+            <input type = "text" name="firstName"/>
         </label>
         <br />
-        Email:
-        <input type = "email" name = "email">
+        <label for = "lastName">
+            Last Name:
+            <input type = "text" name = "lastName"/>
         </label>
         <br />
-        <label for = "message" >
-        Message:
-        <textarea name="message" id="" cols="30" rows="4" ></textarea>
+        <label for = "email" >
+            Email:
+            <input type="email" name="email"/>
         </label>
-        <br>
-        <input type="submit" value="SEND">
+        <!-- <textarea name="message" id="" cols="30" rows="4" ></textarea> -->
+        
+        <br />
+        <input type="submit" value="SAVE"/>
 
-    </form>
+        </form>
     </section>
 </main>
     
-<footer><ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Contact</li>
-</ul></footer>
+<footer>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+</ul>
+
+</footer>
 
 <script src="scripts.js"></script> 
 <!-- needs to go within the body -->
